@@ -1,4 +1,4 @@
-name: CI
+name: CI second one
 on: push
 jobs:
   prod-check:
