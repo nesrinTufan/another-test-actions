@@ -1,10 +1,7 @@
 name: CI
 on: push
+permissions: read-all
 jobs:
   prod-check:
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Nice work, $First_Name. Deploying to production server on branch $GITHUB_REF"
-        env:
-          First_Name: Nesrin Saxeide
+      steps:
+        - run: echo "Deploying to production server on branch $GITHUB_REF"
